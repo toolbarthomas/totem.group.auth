@@ -1,0 +1,66 @@
+{% extends totem_group_auth.extends|default('totem_submodules::totem.template.auth/index.twig') %}
+
+{% block content %}
+    {% if totem_group_auth.pages.login %}
+        <h1 class="h4">{{ totem_group_auth.pages.login.title|default('Login') }}</h1>
+    {% endif %}
+
+    {% embed 'totem_submodules::totem.module.panel/partials/panel.twig' with {
+        panel_attributes: {
+            class: 'panel--popup'
+        }
+    } %}
+
+        {% if totem_group_auth.logo.src is not empty %}
+            {% block panel__header %}
+                <img class="logo"
+                    src="{{ totem_group_auth.logo.src }}"
+                    alt="{{ totem_group_auth.logo.title|default('') }}"
+                    width="{{ totem_group_auth.logo.title|default('auto') }}"
+                    height="{{ totem_group_auth.logo.title|default('auto') }}"
+                />
+            {% endblock %}
+        {% endif %}
+
+        {% block panel__main %}
+
+            {% include "totem_submodules::totem.module.form/partials/fields/input.twig" with totem_group_auth.pages.login.options.fields.username|default({
+                input_attributes: {
+                    placeholder: "Username",
+                    name: "username"
+                }
+            }) %}
+
+            {% include "totem_submodules::totem.module.form/partials/fields/input.twig" with totem_group_auth.pages.login.options.fields.password|default({
+                input_attributes: {
+                    placeholder: "Password",
+                    type: "password",
+                    name: "password"
+                }
+            }) %}
+
+        {% endblock %}
+
+    {% endembed %}
+
+    {% if totem_group_auth.pages.login.options.forgot_password %}
+    <div class="forgot-password">
+        <a href="{{ totem_group_auth.pages.login.options.forgot_password.route }}">
+            {{ totem_group_auth.pages.login.options.forgot_password.title }}
+        </a>
+    </div>
+    {% endif %}
+{% endblock %}
+
+{% block head %}
+    {% include 'totem_submodules::totem.module.loadcss/partials/loadcss.twig' with {
+        stylesheets: totem_group_auth.stylesheets|default([
+            '/resources/modules/totem.module.tipi-base-adapter/stylesheets/totem.module.tipi-base-adapter.css',
+            '/resources/modules/totem.module.panel/stylesheets/totem.module.panel.css',
+            '/resources/modules/totem.module.panel/stylesheets/totem.module.button.css',
+            '/resources/modules/totem.module.form/stylesheets/totem.module.form.css',
+            '/resources/templates/totem.template.auth/stylesheets/totem.template.auth.css',
+            '/resources/groups/totem.group.auth/stylesheets/totem.group.auth.css'
+        ])
+    } %}
+{% endblock %}

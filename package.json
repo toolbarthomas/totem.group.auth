@@ -1,0 +1,29 @@
+{
+    "name": "totem.group.auth",
+    "version": "0.1.0",
+    "description": "Default auth pages for Totem",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/toolbarthomas/totem.group.auth.git"
+    },
+    "keywords": [
+        "totem",
+        "tipi",
+        "totem-module"
+    ],
+    "author": "Thomas van der Velde <contact@toolbarthomas.net>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/toolbarthomas/totem.group.auth/issues"
+    },
+    "homepage": "https://github.com/toolbarthomas/totem.group.auth#readme",
+    "dependencies": {
+        "totem.module.button": "^0.5.0",
+        "totem.module.form": "^0.5.0",
+        "totem.module.loadcss": "^0.5.0",
+        "totem.module.tipi-base-adapter": "^1.7.0"
+    }
+}
