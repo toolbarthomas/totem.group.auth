@@ -1,0 +1,49 @@
+{
+    "totem_group_auth": {
+        "extends": "",
+        "stylesheets": "",
+        "logo": {
+            "src": "",
+            "width": "",
+            "height": "",
+            "title": ""
+        },
+        "pages": {
+            "login": {
+                "title": "Inloggen",
+                "form_fields": {
+                    "username": {
+                        "type": "input",
+                        "input_attributes": {
+                            "name": "username",
+                            "placeholder": "Gebruikersnaam"
+                        }
+                    },
+                    "password": {
+                        "type": "input",
+                        "input_attributes": {
+                            "name": "password",
+                            "type": "password",
+                            "placeholder": "Wachtwoord"
+                        }
+                    },
+                    "submit": {
+                        "type": "submit",
+                        "title": "Inloggen",
+                        "input_attributes": {
+                            "type": "submit"
+                        }
+                    }
+                },
+                "routes": {
+                    "forgot_password": {
+                        "title": "Wachtwoord vergeten?",
+                        "attributes": {
+                            "href": "forgot-password.html"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

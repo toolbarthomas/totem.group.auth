@@ -12,7 +12,7 @@
     "keywords": [
         "totem",
         "tipi",
-        "totem-module"
+        "totem-group"
     ],
     "author": "Thomas van der Velde <contact@toolbarthomas.net>",
     "license": "MIT",
@@ -24,6 +24,7 @@
         "totem.module.button": "^0.5.0",
         "totem.module.form": "^0.5.0",
         "totem.module.loadcss": "^0.5.0",
-        "totem.module.tipi-base-adapter": "^1.7.0"
+        "totem.module.tipi-base-adapter": "^1.7.0",
+        "totem.template.auth": "^0.1.0"
     }
 }
