@@ -1,6 +1,6 @@
 {
     "name": "totem.group.auth",
-    "version": "0.2.3",
+    "version": "0.3.0",
     "description": "Default auth pages for Totem",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,10 +21,10 @@
     },
     "homepage": "https://github.com/toolbarthomas/totem.group.auth#readme",
     "dependencies": {
-        "totem.module.button": "^0.5.0",
+        "totem.module.button": "^0.6.2",
         "totem.module.form": "^0.6.1",
         "totem.module.loadcss": "^0.6.0",
-        "totem.module.panel": "^0.1.0",
+        "totem.module.panel": "^0.2.0",
         "totem.module.tipi-base-adapter": "^1.7.0",
         "totem.template.auth": "^0.2.0"
     }

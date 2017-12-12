@@ -3,20 +3,20 @@
         "extends": "",
         "stylesheets": "",
         "logo": {
-            "src": "",
+            "src": "http://placehold.it/100x100",
             "width": "",
             "height": "",
             "title": ""
         },
         "pages": {
             "login": {
-                "title": "Inloggen",
+                "title": "Login",
                 "form_fields": {
                     "username": {
                         "type": "input",
                         "input_attributes": {
                             "name": "username",
-                            "placeholder": "Gebruikersnaam"
+                            "placeholder": "Username"
                         }
                     },
                     "password": {
@@ -24,12 +24,12 @@
                         "input_attributes": {
                             "name": "password",
                             "type": "password",
-                            "placeholder": "Wachtwoord"
+                            "placeholder": "Password"
                         }
                     },
                     "submit": {
                         "type": "submit",
-                        "title": "Inloggen",
+                        "title": "Login",
                         "input_attributes": {
                             "type": "submit"
                         }
@@ -37,7 +37,7 @@
                 },
                 "routes": {
                     "forgot_password": {
-                        "title": "Wachtwoord vergeten?",
+                        "title": "Forgot password?",
                         "attributes": {
                             "href": "forgot-password.html"
                         }
